@@ -1,0 +1,200 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:  #0F172A;
+    color: #333;
+    color: white;
+  }
+
+  
+header{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+  padding: 20px;
+  margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+nav a:hover{
+    color: #2e7ded;
+    font-size: 1.3em;
+    transition: 0.8s;
+}
+.pesq form {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 15px;
+  width: 200px;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+abbr{
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #333;
+}
+header h1{
+     font-size: 2rem;
+    margin-bottom: 10px;
+}
+  
+  /* Main */
+  main {
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    
+  }
+  
+.row{
+  text-align: center;
+  margin: 8px;
+}
+
+
+.umr:hover{
+   transform: translate(0, -20px);
+   transition: 0.5s;
+   border-radius: 10px;
+}
+
+.carrossel-container {
+    position: relative;
+    width: 100%;  /* ocupa a tela inteira */
+  }
+
+  .mar {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .mar img {
+    flex: 0 0 auto;
+    border-radius: 5px;
+  }
+
+  .mar::-webkit-scrollbar {
+    display: none; /* esconde a barra */
+  }
+
+  /* Botões laterais */
+  .btn-esq, .btn-dir {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+
+  .btn-esq:hover, .btn-dir:hover {
+    opacity: 1;
+  }
+
+  .btn-esq { left: 5px; }
+  .btn-dir { right: 5px; }
+
+  #secd{
+    border-top: solid black 2px;
+  }
+  .listas{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+
+}
+li{
+  list-style: none;
+
+}
+ul{
+  border-right: 3px solid black;
+  padding: 10px;
+}
+footer{
+  text-align: center;
+  background-image: linear-gradient( to bottom, #0F172A,  #083b8c  );
+  padding: 20px;
+}
+.feito{
+  border-top: 3px solid black;
+  margin: 10px;
+}
+.feito p{
+  margin: 10px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  margin: 10px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 2rem;
+  color: var(--color);
+  position: relative;
+}
+
+.icon:hover {
+  box-shadow: 0 0 15px var(--color),
+              0 0 30px var(--color),
+              0 0 60px var(--color);
+}

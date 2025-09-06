@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Vídeo de Fundo com YouTube</title>
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Vídeo de Fundo</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* Vídeo ocupando a tela toda */
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover; /* Ajusta o vídeo para cobrir */
+    height: 200px;
+    width: 200px;
+      z-index: -1; /* Joga o vídeo para trás do conteúdo */
+    }
+
+    /* Conteúdo em cima do vídeo */
+    .conteudo {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      top: 40%;
+      font-size: 2em;
+      font-family: Arial, sans-serif;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <!-- Vídeo de fundo -->
+  <div class="video">
+      <video autoplay muted loop>
+        <source src="seu-video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos em HTML5.
+      </video>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="conteudo">
+    <h1>Bem-vindo ao meu site!</h1>
+    <p>Este é um exemplo com vídeo de fundo.</p>
+  </div>
+
+</body>
+</html>
+
+</head>
+<body>
+
+  <video autoplay muted loop>
+    <source src="vid/livro.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos em HTML5.
+  </video>
+
+  <!-- Conteúdo -->
+  <div class="conteudo">
+    <h1>Bem-vindo ao meu site!</h1>
+    <p>Fundo com vídeo do YouTube 🎥</p>
+  </div>
+
+</body>
+</html>
