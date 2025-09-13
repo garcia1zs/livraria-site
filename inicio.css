@@ -49,6 +49,14 @@ nav a:hover {
   border-radius: 14px;
   transition: 0.6s ease-in;
 }
+input[type="button"]{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2e7ded;
+}
+
+
 
 .pesq form {
   display: flex;
